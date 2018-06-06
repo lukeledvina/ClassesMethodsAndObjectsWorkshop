@@ -17,13 +17,13 @@ public class Cat extends Pet {
 
 //    public Cat(String ownerName, String petName, int age, char gender, String homeAddress) {
 //        super(ownerName, petName, age, gender, homeAddress);
-    }
+//    }
 
 //        public Cat(String name, int legs, double weight) {
 //        this.name = name;
 //        this.legs = legs;
 //        this.weight = weight;
-    }
+
 //
 //    public String getName() {
 //        return name;
@@ -69,8 +69,31 @@ public class Cat extends Pet {
         return furColor;
     }
 
+
+    @Override
+    protected String makeSound() {
+        return "MEOOOOOW";
+    }
+
     public void setFurColor(String furColor) {
         this.furColor = furColor;
     }
+
+    protected String catYears () {
+
+        int catYears;
+
+        switch (super.getAge()) {
+            case 0: catYears = 0; break;
+            case 1: catYears = 19; break;
+            case 2: catYears = 24; break;
+            default: catYears = (super.getAge() - 2) * 4 + 24;
+
+
+
+        }
+        return super.getPetName() + " is " + super.getAge() + " human years old and " + catYears + " cat years old.";
+
+    }
 }
-}
+

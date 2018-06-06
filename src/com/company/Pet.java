@@ -55,4 +55,9 @@ public class Pet {
     public void setHomeAddress(String homeAddress) {
         this.homeAddress = homeAddress;
     }
+
+    protected String makeSound() {
+
+        return "Pets have no sound";
+    }
 }
