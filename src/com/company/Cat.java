@@ -1,6 +1,6 @@
 package com.company;
 
-public class Cat {
+public class Cat extends Pet {
 
     String name;
     boolean whiskers;
@@ -9,19 +9,29 @@ public class Cat {
     double weight;
     String furColor;
 
-    public Cat(String name, int legs, double weight) {
-        this.name = name;
-        this.legs = legs;
+    public Cat(String ownerName, String petName, int age, char gender, String homeAddress, boolean fur, double weight) {
+        super(ownerName, petName, age, gender, homeAddress);
+        this.fur = fur;
         this.weight = weight;
     }
 
-    public String getName() {
-        return name;
+//    public Cat(String ownerName, String petName, int age, char gender, String homeAddress) {
+//        super(ownerName, petName, age, gender, homeAddress);
     }
 
-    public void setName(String name) {
-        this.name = name;
+//        public Cat(String name, int legs, double weight) {
+//        this.name = name;
+//        this.legs = legs;
+//        this.weight = weight;
     }
+//
+//    public String getName() {
+//        return name;
+//    }
+//
+//    public void setName(String name) {
+//        this.name = name;
+//    }
 
     public boolean isWhiskers() {
         return whiskers;
