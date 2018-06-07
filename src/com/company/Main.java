@@ -15,8 +15,10 @@ public class Main {
 
     }
 
+    Rabbit myRabbit = new Rabbit("Luke","Whomp",6,'f',"Louisville",1.25,"brown and white");
 
 
-    }
+}
+
 
 
